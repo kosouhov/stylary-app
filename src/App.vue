@@ -1,0 +1,127 @@
+<template>
+  <div id="app">
+    <div :class="['page', mode]">
+      <div class="page__sidebar">
+        <Sidebar
+          :mode="mode"
+          @changeMode="changeMode($event)"
+        />
+      </div>
+      <div class="page__main">
+        <div class="main">
+          <div class="main__header">
+            <div class="header">
+              <div class="header__logo">
+                <div class="logo">
+                  <div class="logo__type">Stylary</div>
+                  <div class="logo__subtitle">конструктор</div>
+                </div>
+              </div>
+              <div class="header__menu">
+                <div class="menu-container">
+                  <ul class="menu">
+                    <li class="menu__item"><a href="" class="menu__link">О проекте</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Связаться с нами</a></li>
+                  </ul>
+                </div>
+                <div class="open-menu">
+                  <div class="open-menu__icon"><img src="./assets/images/menu.svg" class="open-menu__image"></div>
+                  <div class="open-menu__type">меню</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__content">
+            <div class="content" ref="content">
+              <Category
+                v-for="(item, index) in pages"
+                :category="item"
+                :catId="index"
+                :styles="styles"
+                :key="index"
+                @add="add($event)"
+                @detailed="showDetailed(true, $event)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <PageDetailed
+      v-if="detailed.show"
+      :page="pages[detailed.id.catId].items[detailed.id.pageId]"
+      :id="detailed.id"
+      @add="add($event)"
+      @closeDetailed="detailed.show = false"
+    />
+  </div>
+</template>
+
+<script>
+import Category from './components/Category.vue'
+import Sidebar from './components/Sidebar.vue'
+import PageDetailed from './components/PageDetailed.vue'
+import Data from './assets/data.json'
+
+export default {
+  name: 'app',
+  components: {
+    Category,
+    Sidebar,
+    PageDetailed
+  },
+  data() {
+    return {
+      pages: Data,
+      mode: {
+        night: false,
+        largeGrid: false,
+        mobileMenu: false
+      },
+      styles: {
+        plannerPage: {
+          'max-width': 0
+        }
+      },
+      detailed: {
+        show: false,
+        id: {
+          pageId: 0,
+          catId: 0
+        }
+      }
+    }
+  },
+  methods: {
+    add: function(event) {
+      this.pages[event.catId].items[event.pageId].added = !this.pages[event.catId].items[event.pageId].added
+    },
+    showDetailed: function(show, id) {
+      this.detailed.show = show
+      this.detailed.id = id
+    },
+    changeMode: function(mode) {
+      this.mode[mode] = !this.mode[mode]
+      this.setPlannerPageStyle()
+    },
+    setPlannerPageStyle: function() {
+      let contentWidth = this.$refs.content.querySelector('.category').getBoundingClientRect().width,
+          pagesInRow = Math.floor(contentWidth / this.getPageMinWidth())
+      this.styles.plannerPage['max-width'] = pagesInRow ? contentWidth / pagesInRow + 'px' : contentWidth + 'px'
+    },
+    getPageMinWidth: function() {
+      return ((document.body.clientWidth <= 480) || (this.mode.largeGrid)) ? 400 : 200
+    }
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      window.addEventListener('resize', this.setPlannerPageStyle)
+      this.setPlannerPageStyle()
+    })
+  }
+}
+</script>
+
+<style lang="sass">
+  @import './assets/style.sass'
+</style>

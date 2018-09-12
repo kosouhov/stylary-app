@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div :class="['page', mode]">
+    <div :class="['page', mode, detailed.show ? 'page_blurred' : false]">
       <div class="page__sidebar">
         <Sidebar
           :mode="mode"

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div :class="['page', mode, detailed.show ? 'page_blurred' : false]">
+    <div :class="['page', mode, detailed.show ? 'page_blurred' : false]" @click="mode.mobileMenu = false">
       <div class="page__sidebar">
         <Sidebar
           :mode="mode"
@@ -17,14 +17,14 @@
                   <div class="logo__subtitle">конструктор</div>
                 </div>
               </div>
-              <div class="header__menu">
+              <div class="header__menu" onclick="event.stopPropagation()">
                 <div class="menu-container">
-                  <ul class="menu">
+                  <ul :class="['menu', mode.mobileMenu ? 'opened' : false]">
                     <li class="menu__item"><a href="" class="menu__link">О проекте</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Связаться с нами</a></li>
                   </ul>
                 </div>
-                <div class="open-menu">
+                <div class="open-menu" @click="mode.mobileMenu = true">
                   <div class="open-menu__icon"><img src="./assets/images/menu.svg" class="open-menu__image"></div>
                   <div class="open-menu__type">меню</div>
                 </div>

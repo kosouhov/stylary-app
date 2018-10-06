@@ -54,6 +54,9 @@
       @add="add($event)"
       @closeDetailed="detailed.show = false"
     />
+    <Total
+      :total="totalPrice"
+    />
   </div>
 </template>
 
@@ -61,6 +64,7 @@
 import Category from './components/Category.vue'
 import Sidebar from './components/Sidebar.vue'
 import PageDetailed from './components/PageDetailed.vue'
+import Total from './components/Total.vue'
 import Data from './assets/data.json'
 
 export default {
@@ -68,7 +72,8 @@ export default {
   components: {
     Category,
     Sidebar,
-    PageDetailed
+    PageDetailed,
+    Total
   },
   data() {
     return {
@@ -111,6 +116,21 @@ export default {
     },
     getPageMinWidth: function() {
       return ((document.body.clientWidth <= 480) || (this.mode.largeGrid)) ? 400 : 200
+    }
+  },
+  computed: {
+    totalPrice: function () {
+      let T = {},
+          total = 0
+      this.pages.forEach(function(category) {
+        category.items.forEach(function(item) {
+          item.added ? T[item.set_id] = item.price : false
+        })
+      })
+      for (let i in T) {
+        total += T[i]
+      }
+      return total
     }
   },
   mounted: function() {

@@ -99,7 +99,15 @@ export default {
   },
   methods: {
     add: function(event) {
-      this.pages[event.catId].items[event.pageId].added = !this.pages[event.catId].items[event.pageId].added
+      let ts = this,
+          set_id = ts.pages[event.catId].items[event.pageId].set_id
+      ts.pages.forEach(function(category, cat_id) {
+        category.items.forEach(function(item, item_id) {
+          if (ts.pages[cat_id].items[item_id].set_id == set_id) {
+            ts.pages[cat_id].items[item_id].added = !ts.pages[cat_id].items[item_id].added
+          }
+        })
+      })
     },
     showDetailed: function(show, id) {
       this.detailed.show = show

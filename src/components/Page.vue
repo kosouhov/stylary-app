@@ -3,8 +3,8 @@
     <div class="planner-page">
       <div class="planner-page__picture" @click="$emit('detailed', {pageId: pageId, catId: catId})">
         <div class="planner-page__images">
-          <div class="planner-page__front-side"><img src="./../assets/images/front-side.svg" class="planner-page__image"></div>
-          <div class="planner-page__back-side"><img src="./../assets/images/back-side.svg" class="planner-page__image"></div>
+          <div class="planner-page__front-side"><img :src="require('./../assets/images/pages/' + page.images.front)" class="planner-page__image"></div>
+          <div class="planner-page__back-side"><img :src="require('./../assets/images/pages/' + page.images.back)" class="planner-page__image"></div>
         </div>
         <div :class="['planner-page__buttons', page.added ? 'added' : false]">
           <div class="planner-page__icons" @click="$emit('add', {pageId: pageId, catId: catId})" onclick="event.stopPropagation()"><img src="./../assets/images/add.svg" class="planner-page__add"><img src="./../assets/images/remove.svg" class="planner-page__remove"></div>

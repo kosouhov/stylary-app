@@ -5,10 +5,10 @@
 				<div class="detailed-content__picture">
 					<div class="detailed-picture">
 						<div class="detailed-picture__front-side">
-							<img src="./../assets/images/front-side.svg" alt="" class="detailed-picture__image">
+							<img :src="require('./../assets/images/pages/' + page.images.front)" alt="" class="detailed-picture__image">
 						</div>
 						<div class="detailed-picture__back-side">
-							<img src="./../assets/images/back-side.svg" alt="" class="detailed-picture__image">
+							<img :src="require('./../assets/images/pages/' + page.images.back)" alt="" class="detailed-picture__image">
 						</div>
 					</div>
 				</div>

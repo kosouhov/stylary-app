@@ -1,0 +1,188 @@
+[
+	{
+		"categoryTitle": "Базовые",
+		"items": [
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 1,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 2,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 3,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 4,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			}
+		]
+	},
+	{
+		"categoryTitle": "Дополнительные",
+		"items": [
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "front-side.svg",
+					"back": "back.jpg"
+				},
+				"title": "Цветовой круг",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"price": 120,
+				"set_id": 5,
+				"added": true
+			}
+		]
+	}
+]

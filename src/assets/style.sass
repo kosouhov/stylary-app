@@ -170,9 +170,13 @@ ul
 	border-bottom: 1px solid rgba(0,0,0,0.06)
 	box-sizing: border-box
 	line-height: 1
-	font-size: 18px
+	font-size: 20px
 	font-weight: 600
 	text-transform: uppercase
+
+	.category__price
+		margin-left: 20px
+		opacity: 0.5
 	
 .category__list
 .category-list
@@ -200,6 +204,7 @@ ul
 	transform: rotateY(180deg)
 
 .planner-page__front-side
+	background-color: white
 	backface-visibility: hidden
 
 .planner-page__back-side
@@ -207,6 +212,7 @@ ul
 	left: 0
 	top: 0
 	width: 100%
+	background-color: white
 	backface-visibility: hidden
 	transform: rotateY(180deg)
 
@@ -259,16 +265,19 @@ ul
 	transform: rotate(45deg)
 
 .planner-page__data
-	min-height: 180px
+	min-height: 150px
 
 .planner-page__name,
-.planner-page__price
 	display: flex
 	align-items: flex-end
 	height: 40px
 	font-size: 18px
 	font-weight: 600
 	text-transform: uppercase
+
+.planner-page__name-container
+	display: flex
+	align-items: baseline
 
 .planner-page__description
 	line-height: 1.3
@@ -279,14 +288,10 @@ ul
 .ruble-stroke_regular
 	display: inline-block
 	transform: translate(-12px,2px)
-	
-.planner-page__status
-	position: absolute
-	right: 0
-	top: 0
 
 .planner-page__added-icon
 	width: 20px
+	margin-left: 5px
 
 .mobile,
 .tablet
@@ -409,12 +414,10 @@ ul
 			color: white
 
 	.category__title
-		font-weight: 400
 		border-color: rgba(255,255,255,0.1)
 
 	.planner-page__name,
 	.planner-page__price
-		font-weight: 400
 
 /* крупная сетка */
 

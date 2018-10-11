@@ -1,7 +1,7 @@
 <template>
   <div class="content__category">
     <div class="category">
-      <div class="category__title">{{ category.categoryTitle }}</div>
+      <div class="category__title">{{ category.categoryTitle }}<span class="category__price">{{ price }}</span></div>
       <div class="category__list">
         <div class="category-list">
           <Page
@@ -32,6 +32,12 @@ export default {
   },
   components: {
     Page
+  },
+  computed: {
+    price: function () {
+      let price = this.category.price ? '+' + this.category.price + ' Р' : 'Базовый набор'
+      return price
+    }
   }
 }
 </script>

@@ -11,11 +11,12 @@
         </div>
       </div>
       <div class="planner-page__data">
-        <div class="planner-page__name">{{ page.title }}</div>
+        <div class="planner-page__name">
+          <div class="planner-page__name-container">{{ page.title }}<img src="./../assets/images/tick.svg" class="planner-page__added-icon" v-if="page.added"></div>
+        </div>
         <div class="planner-page__description">{{ page.description }}</div>
-        <div class="planner-page__price">{{ page.price }} Р<span>–</span></div>
       </div>
-      <div class="planner-page__status" v-if="page.added"><img src="./../assets/images/tick.svg" class="planner-page__added-icon"></div>
+      <div class="planner-page__status"></div>
     </div>
   </div>
 </template>

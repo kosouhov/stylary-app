@@ -99,15 +99,17 @@ export default {
   },
   methods: {
     add: function(event) {
-      let ts = this,
-          set_id = ts.pages[event.catId].items[event.pageId].set_id
-      ts.pages.forEach(function(category, cat_id) {
-        category.items.forEach(function(item, item_id) {
-          if (ts.pages[cat_id].items[item_id].set_id == set_id) {
-            ts.pages[cat_id].items[item_id].added = !ts.pages[cat_id].items[item_id].added
-          }
+      let ts = this
+      if (ts.pages[event.catId].radioButton) {
+        ts.pages[event.catId].items.forEach(function(item, item_id) {
+          item.added = false
         })
-      })
+        ts.pages[event.catId].items[event.pageId].added = true
+      } else {
+        ts.pages[event.catId].items.forEach(function(item, item_id) {
+          item.added = !item.added
+        })
+      }
     },
     showDetailed: function(show, id) {
       this.detailed.show = show
@@ -128,16 +130,10 @@ export default {
   },
   computed: {
     totalPrice: function () {
-      let T = {},
-          total = 0
+      let total = 0
       this.pages.forEach(function(category) {
-        category.items.forEach(function(item) {
-          item.added ? T[item.set_id] = item.price : false
-        })
+        category.items.some(e => e.added) ? total += category.price : false
       })
-      for (let i in T) {
-        total += T[i]
-      }
       return total
     }
   },

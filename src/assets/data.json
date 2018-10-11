@@ -1,6 +1,9 @@
 [
 	{
 		"categoryTitle": "Обложка",
+		"catTag": "cover",
+		"price": 0,
+		"radioButton": true,
 		"items": [
 			{
 				"images": {
@@ -9,8 +12,6 @@
 				},
 				"title": "Stylehard",
 				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
-				"price": 0,
-				"set_id": 0,
 				"added": true
 			},
 			{
@@ -20,9 +21,33 @@
 				},
 				"title": "Styleout",
 				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
-				"price": 0,
-				"set_id": 0,
 				"added": false
+			}
+		]
+	},
+	{
+		"categoryTitle": "Обложка",
+		"catTag": "cover",
+		"price": 300,
+		"radioButton": false,
+		"items": [
+			{
+				"images": {
+					"front": "0_1_str_oblojka_stylehard-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Stylehard",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "0_1_str_oblojka_StyleOut_LAVANDA-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
 			}
 		]
 	}

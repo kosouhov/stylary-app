@@ -1,7 +1,7 @@
 <template>
   <div class="content__category">
     <div class="category">
-      <div class="category__title">{{ category.categoryTitle }}<span class="category__price">{{ price }}</span></div>
+      <div class="category__title">{{ category.categoryTitle }}<div class="category__price">{{ price }}<span v-if="category.price">–</span></div></div>
       <div class="category__list">
         <div class="category-list">
           <Page
@@ -9,6 +9,7 @@
             :page="item"
             :pageId="index"
             :catId="catId"
+            :radioButton="category.radioButton"
             :styles="styles"
             :key="index"
             @add="$emit('add', $event)"

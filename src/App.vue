@@ -51,6 +51,8 @@
       v-if="detailed.show"
       :page="pages[detailed.id.catId].items[detailed.id.pageId]"
       :id="detailed.id"
+      :radioButton="pages[detailed.id.catId].radioButton"
+      :price="pages[detailed.id.catId].price"
       @add="add($event)"
       @closeDetailed="detailed.show = false"
     />
@@ -94,7 +96,8 @@ export default {
           pageId: 0,
           catId: 0
         }
-      }
+      },
+      basePrice: 2000
     }
   },
   methods: {
@@ -134,7 +137,7 @@ export default {
       this.pages.forEach(function(category) {
         category.items.some(e => e.added) ? total += category.price : false
       })
-      return total
+      return this.basePrice + total
     }
   },
   mounted: function() {

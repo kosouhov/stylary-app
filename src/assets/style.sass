@@ -177,7 +177,12 @@ ul
 	.category__price
 		margin-left: 20px
 		opacity: 0.5
-	
+		text-transform: none
+
+		span
+			display: inline-block
+			transform: translate(-14px,2px)
+
 .category__list
 .category-list
 	display: flex
@@ -264,6 +269,13 @@ ul
 	opacity: 1
 	transform: rotate(45deg)
 
+.added .planner-page__add_radio
+	transform: none
+
+.added .planner-page__remove_radio
+	opacity: 0
+	transform: none
+
 .planner-page__data
 	min-height: 150px
 
@@ -336,9 +348,12 @@ ul
 .detailed-content__picture
 .detailed-picture
 .detailed-picture__front-side
-	margin-bottom: 10px
+	margin-bottom: 20px
+	background-color: white
 
 .detailed-picture__back-side
+	background-color: white
+
 .detailed-picture__image
 	display: block
 	
@@ -348,7 +363,7 @@ ul
 	display: flex
 	align-items: flex-end
 	height: 50px
-	font-size: 21px
+	font-size: 20px
 	font-weight: 600
 	text-transform: uppercase
 
@@ -379,6 +394,10 @@ ul
 	
 .detailed-content__button_remove
 	background-color: rgb(238,0,0)
+
+.detailed-content__button_added
+	background-color: rgba(0,0,0,0.5)
+	cursor: auto
 
 .total
 	position: fixed

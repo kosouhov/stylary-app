@@ -33,8 +33,8 @@
 		"items": [
 			{
 				"images": {
-					"front": "0_1_str_oblojka_stylehard-01.svg",
-					"back": "0_str_oblojka_oborot-01.svg"
+					"front": "1_str_tsvetovoy-krug-01.svg",
+					"back": "2_str_ton_rastyajka-01.svg"
 				},
 				"title": "Stylehard",
 				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
@@ -42,8 +42,98 @@
 			},
 			{
 				"images": {
-					"front": "0_1_str_oblojka_StyleOut_LAVANDA-01.svg",
-					"back": "0_str_oblojka_oborot-01.svg"
+					"front": "15_str_print_5_5-01.svg",
+					"back": "empty.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "19_str_KALENDAR_2019_korr-01.svg",
+					"back": "20_str_KALENDAR_2020-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "21_str_SOBITIYA_2019-01.svg",
+					"back": "empty.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "23_str_purpose-01.svg",
+					"back": "24_str_planner_lev-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "25_str_planner_prav-01.svg",
+					"back": "24_str_planner_lev-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "25_str_planner_prav-01.svg",
+					"back": "26_str_results_korr-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "29_str_tochka-line-01.svg",
+					"back": "30_str_tochka-line_oborot-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "31_str_shopping-trak_4-01.svg",
+					"back": "empty.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "37_str_Povedenie_v_magazine_korr2-01.svg",
+					"back": "38_str_Avtorskie_prava_korr2-01.svg"
+				},
+				"title": "Styleout",
+				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"added": true
+			},
+			{
+				"images": {
+					"front": "39_str_Vozvrat_tovara_korr2-01.svg",
+					"back": "40_str_vozvrat_tovara_OBOROT_korr2-01.svg"
 				},
 				"title": "Styleout",
 				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",

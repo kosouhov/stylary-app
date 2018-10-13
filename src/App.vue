@@ -100,14 +100,31 @@ export default {
   methods: {
     add: function(event) {
       let ts = this,
-          set_id = ts.pages[event.catId].items[event.pageId].set_id
-      ts.pages.forEach(function(category, cat_id) {
-        category.items.forEach(function(item, item_id) {
-          if (ts.pages[cat_id].items[item_id].set_id == set_id) {
-            ts.pages[cat_id].items[item_id].added = !ts.pages[cat_id].items[item_id].added
-          }
-        })
-      })
+          page = ts.pages[event.catId].items[event.pageId]
+      if (page.set_id) { //страница в наборе
+        if (page.radio) { //страница в наборе радиокнопок
+          ts.pages.forEach(function(category, cat_id) {
+            category.items.forEach(function(item, item_id) {
+              if (item.set_id == page.set_id) {
+                if (item.radio) {
+                  item.added = false
+                }
+              }
+            })
+          })
+          page.added = true
+        } else {
+          ts.pages.forEach(function(category, cat_id) {
+            category.items.forEach(function(item, item_id) {
+              if (item.set_id == page.set_id) {
+                page.added = !page.added
+              }
+            })
+          })
+        }
+      } else { //одиночная страница
+        page.added = !page.added
+      }
     },
     showDetailed: function(show, id) {
       this.detailed.show = show

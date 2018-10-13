@@ -7,7 +7,10 @@
           <div class="planner-page__back-side"><img :src="require('./../assets/images/pages/' + page.images.back)" class="planner-page__image"></div>
         </div>
         <div :class="['planner-page__buttons', page.added ? 'added' : false]">
-          <div class="planner-page__icons" @click="$emit('add', {pageId: pageId, catId: catId})" onclick="event.stopPropagation()"><img src="./../assets/images/add.svg" class="planner-page__add"><img src="./../assets/images/remove.svg" class="planner-page__remove"></div>
+          <div class="planner-page__icons" @click="$emit('add', {pageId: pageId, catId: catId})" onclick="event.stopPropagation()">
+            <img src="./../assets/images/add.svg" class="planner-page__add" :class="page.radio ? 'planner-page__add_radio' : false">
+            <img src="./../assets/images/remove.svg" class="planner-page__remove" v-if="!page.radio">
+          </div>
         </div>
       </div>
       <div class="planner-page__data">

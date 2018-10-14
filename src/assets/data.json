@@ -7,8 +7,8 @@
 					"front": "0_1_str_oblojka_stylehard-01.svg",
 					"back": "0_str_oblojka_oborot-01.svg"
 				},
-				"title": "Stylehard",
-				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"title": "Stylehard cream",
+				"description": "Обложка из плотного дизайнерского картона",
 				"price": 0,
 				"set_id": "cover",
 				"radio": true,
@@ -16,14 +16,261 @@
 			},
 			{
 				"images": {
-					"front": "0_1_str_oblojka_StyleOut_LAVANDA-01.svg",
+					"front": "0_1_str_oblojka_stylehard_WHITE-01.svg",
 					"back": "0_str_oblojka_oborot-01.svg"
 				},
-				"title": "Styleout",
-				"description": "До сих пор вы встречали, что во входные параметры передавались статические значения",
+				"title": "Stylehard white",
+				"description": "Обложка из плотного дизайнерского картона",
 				"price": 0,
 				"set_id": "cover",
 				"radio": true,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "0_1_str_oblojka_StyleOut_LAVANDA-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Styleout lavanda",
+				"description": "Обложка из плотного дизайнерского картона",
+				"price": 0,
+				"set_id": "cover",
+				"radio": true,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "0_1_str_oblojka_StyleOut_BLACK-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Styleout dark",
+				"description": "Обложка из плотного дизайнерского картона",
+				"price": 0,
+				"set_id": "cover",
+				"radio": true,
+				"added": false
+			}
+		]
+	},
+	{
+		"categoryTitle": "Основные страницы",
+		"items": [
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			},
+			{
+				"images": {
+					"front": "17_str_MARKIROVKA_DVA_STOLBA-01.svg",
+					"back": "18_str_MARKIROVKA_DVA_STOLBA_2str-01.svg"
+				},
+				"title": "Маркировка",
+				"description": "Символы ухода за одеждой",
+				"price": 0,
+				"set_id": "basic",
+				"radio": false,
+				"added": true
+			}
+		]
+	},
+	{
+		"categoryTitle": "Колориты",
+		"items": [
+			{
+				"images": {
+					"front": "4_str_colority_warm-spring-01.svg",
+					"back": "6_str_colority_light-summer-01.svg"
+				},
+				"title": "Тёплая весна",
+				"description": "Тёплый яркий весенний колорит",
+				"price": 250,
+				"set_id": "color_0",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "4_str_colority_warm-spring-01.svg",
+					"back": "6_str_colority_light-summer-01.svg"
+				},
+				"title": "Нежная весна",
+				"description": "Тёплый яркий весенний колорит",
+				"price": 250,
+				"set_id": "color_0",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "6_str_colority_light-summer-01.svg",
+					"back": "4_str_colority_warm-spring-01.svg"
+				},
+				"title": "Лёгкое лето",
+				"description": "Тёплый яркий летний колорит",
+				"price": 250,
+				"set_id": "color_1",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "6_str_colority_light-summer-01.svg",
+					"back": "4_str_colority_warm-spring-01.svg"
+				},
+				"title": "Жаркое лето",
+				"description": "Тёплый яркий летний колорит",
+				"price": 250,
+				"set_id": "color_1",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "10_str_colority_warm-autumn-01.svg",
+					"back": "13_str_colority_cool-winter-01.svg"
+				},
+				"title": "Тёплая осень",
+				"description": "Тёплый яркий осенний колорит",
+				"price": 250,
+				"set_id": "color_2",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "10_str_colority_warm-autumn-01.svg",
+					"back": "13_str_colority_cool-winter-01.svg"
+				},
+				"title": "Тёплая осень",
+				"description": "Тёплый яркий осенний колорит",
+				"price": 250,
+				"set_id": "color_2",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "13_str_colority_cool-winter-01.svg",
+					"back": "10_str_colority_warm-autumn-01.svg"
+				},
+				"title": "Холодная зима",
+				"description": "Холодный яркий зимний колорит",
+				"price": 250,
+				"set_id": "color_3",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "13_str_colority_cool-winter-01.svg",
+					"back": "10_str_colority_warm-autumn-01.svg"
+				},
+				"title": "Холодная зима",
+				"description": "Холодный яркий зимний колорит",
+				"price": 250,
+				"set_id": "color_3",
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "21_str_SOBITIYA_2019-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Одиночная страница",
+				"description": "Короткое описание очередной страницы",
+				"price": 150,
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "21_str_SOBITIYA_2019-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Одиночная страница",
+				"description": "Короткое описание очередной страницы",
+				"price": 150,
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "21_str_SOBITIYA_2019-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Одиночная страница",
+				"description": "Короткое описание очередной страницы",
+				"price": 150,
+				"radio": false,
 				"added": false
 			}
 		]

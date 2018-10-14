@@ -117,7 +117,7 @@ export default {
           ts.pages.forEach(function(category, cat_id) {
             category.items.forEach(function(item, item_id) {
               if (item.set_id == page.set_id) {
-                page.added = !page.added
+                item.added = !item.added
               }
             })
           })
@@ -147,9 +147,13 @@ export default {
     totalPrice: function () {
       let T = {},
           total = 0
-      this.pages.forEach(function(category) {
-        category.items.forEach(function(item) {
-          item.added ? T[item.set_id] = item.price : false
+      this.pages.forEach(function(category, cat_id) {
+        category.items.forEach(function(item, item_id) {
+          if (item.set_id) {
+            item.added ? T[item.set_id] = item.price : false
+          } else {
+            item.added ? T[cat_id + '-' + item_id] = item.price : false
+          }
         })
       })
       for (let i in T) {

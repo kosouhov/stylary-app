@@ -22,7 +22,7 @@
 					<div 
 						:class="['detailed-content__button', page.added ? 'detailed-content__button_remove' : false]"
 						@click="$emit('add', {pageId: id.pageId, catId: id.catId})"
-						v-if="page.price"
+						v-if="!page.radio"
 					>
 						{{ page.added ? 'Удалить' : 'Добавить' }}
 					</div>

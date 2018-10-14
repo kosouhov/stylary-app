@@ -20,8 +20,8 @@
               <div class="header__menu" onclick="event.stopPropagation()">
                 <div class="menu-container">
                   <ul :class="['menu', mode.mobileMenu ? 'opened' : false]">
-                    <li class="menu__item"><a href="" class="menu__link">О проекте</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Связаться с нами</a></li>
+                    <li class="menu__item"><a href="https://github.com/kosouhov/stylary-app" class="menu__link">О проекте</a></li>
+                    <li class="menu__item"><a href="mailto:vladimir@kosouhov.com" class="menu__link">Связаться с нами</a></li>
                   </ul>
                 </div>
                 <div class="open-menu" @click="mode.mobileMenu = true">

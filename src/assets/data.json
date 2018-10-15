@@ -245,7 +245,7 @@
 					"front": "21_str_SOBITIYA_2019-01.svg",
 					"back": "0_str_oblojka_oborot-01.svg"
 				},
-				"title": "Одиночная страница",
+				"title": "Страница",
 				"description": "Короткое описание очередной страницы",
 				"price": 150,
 				"radio": false,
@@ -256,7 +256,7 @@
 					"front": "21_str_SOBITIYA_2019-01.svg",
 					"back": "0_str_oblojka_oborot-01.svg"
 				},
-				"title": "Одиночная страница",
+				"title": "Страница",
 				"description": "Короткое описание очередной страницы",
 				"price": 150,
 				"radio": false,
@@ -267,7 +267,18 @@
 					"front": "21_str_SOBITIYA_2019-01.svg",
 					"back": "0_str_oblojka_oborot-01.svg"
 				},
-				"title": "Одиночная страница",
+				"title": "Страница",
+				"description": "Короткое описание очередной страницы",
+				"price": 150,
+				"radio": false,
+				"added": false
+			},
+			{
+				"images": {
+					"front": "21_str_SOBITIYA_2019-01.svg",
+					"back": "0_str_oblojka_oborot-01.svg"
+				},
+				"title": "Страница",
 				"description": "Короткое описание очередной страницы",
 				"price": 150,
 				"radio": false,
